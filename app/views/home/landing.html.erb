@@ -1,0 +1,120 @@
+<div class="jumbotron jumbotron-title-content">
+  <div class="container-fluid">
+    <h1>Web Developer</h1>
+    <p> Highly motivated developer specializing in Ruby on Rails and Frontend development. </p>
+    <h3> Skills </h3>
+    <div class="row">
+      <div class="col-md-3">
+        <ul>
+          <li>Ruby</li>
+          <li>Ruby on Rails</li>
+          <li>Sinatra</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li> Mysql</li>
+          <li>Postgresql</li>
+          <li>DynamoDB</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li>Git</li>
+          <li>Heroku</li>
+          <li>AWS</li>
+          <li>Github</li>
+        </ul>
+      </div>
+    </div>
+    <h5 style="font-weight:bold;padding-top:20px;">Looking to hire or need a website?</h5>
+    <%= link_to "Lets Chat!", home_contact_path,  class: 'btn btn-primary' %>
+  </div>
+</div>
+<div class="container-projects">
+  <h2> Projects </h2>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="project">
+      <%= image_tag "mr-in.png" %>
+        <div class="proj-content">
+          <h3>MediaRails CRM Integrations UI</h3>
+          <p>A user interface for adding network integrations</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Description</button>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">MediaRails</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+      <%= image_tag "mr.png" %>
+        <div class="proj-content">
+          <h3>Built affiliate network integrations</h3>
+          <p>Added the ability to pull network report data</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Description</button>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">MediaRails</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+      <%= image_tag "weatherappdesc.png" %>
+        <div class="proj-content">
+          <h3>Real Weather</h3>
+          <p> A weather app that consumes the json api from APIXU </p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Description</button>
+          <button "https://github.com/Joelio7/weather_app",  class='btn btn-warning'>View on Github</button>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Real Weather</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

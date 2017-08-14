@@ -1,0 +1,10 @@
+<div class="container">
+  <h3 style="color:#2d3e50;padding-top:25px;"> Lets Connect! </h3>
+<%= bootstrap_form_tag url:  "//formspree.io/joel.scalera@gmail.com", :method => "POST" do |f| %>
+  <%= f.text_field :first_name,  placeholder: 'First Name', :name => "first_name",hide_label: true %>
+  <%= f.text_field :last_name,  placeholder: 'Last Name', :name => "last_name",hide_label: true %>
+  <%= f.email_field :email,  placeholder: 'Email', :name => "email",hide_label: true %>
+  <%= f.text_area :description,  placeholder: 'Small summary of project', :name => "description",hide_label: true %>
+  <%= f.submit "Submit",class: 'btn btn-outline-info'%>
+<% end %>
+</div>

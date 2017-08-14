@@ -1,0 +1,159 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  // background-image: url("ganapathy-kumar-113604.jpg");
+  background-color: #f2f2f5;
+        color: #f2f2f2;
+
+  font-family: serif roboto ;
+}
+.navbar {
+  height: 150px;
+  opacity: 1;
+  .navbar-brand {
+    margin-left: 100px;
+    text-align: center;
+    pointer-events: none;
+  }
+  img {
+    margin-bottom: 8px;
+  }
+
+.navbar-nav {
+  margin-left: 400px;
+  .nav-item {
+    padding: 30px;
+  }
+}
+}
+ .jumbotron-title-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("artem-sapegin-180146.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+
+}
+.container-fluid {
+  text-align: center;
+      color: #f2f2f2;
+
+  text-shadow: 1px 1px black;
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    padding-top: 30px;
+    font-size: 20px;
+    word-spacing: 5px;
+  }
+  h3 {
+    padding-top: 50px;
+  }
+  ul {
+    list-style: none;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-top: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+  }
+
+
+  .btn-primary {
+    text-shadow: none;
+    padding: 10px;
+    width: 200px;
+    @include button-variant(white, #0039e6, #808080);
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+
+  .btn-outline-primary {
+    text-shadow: none;
+    padding: 10px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+    @include button-variant(white, black, #808080);
+  }
+}
+.container {
+  text-align: center;
+  margin-top: 60px;
+  width: 600px;
+  height: 500px;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+}
+form {
+  padding-top: 50px;
+
+}
+.container-projects {
+  height: 500px;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  .project {
+    margin: auto;
+    margin-top: 50px;
+    width: 900px;
+    height:300px;
+
+
+
+   background-color: white;
+   color: black;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+    img {
+     height: 100%;
+      width:300px;
+      vertical-align: middle;
+      float: left;
+    }
+    .proj-content {
+      padding-top: 70px;
+      p {
+        padding-top: 25px;
+      }
+
+    }
+    .btn {
+      margin-top: 10px;
+      border: 1px solid white;
+      color: white;
+    }
+
+}
+
+}
+.container-about {
+  background:  url("18156067_10211971730795939_6782562959131153754_o.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  .container-me {
+    margin: auto;
+    margin-left: 400px;
+    padding: 50px;
+    height: 600px;
+    width: 600px;
+    background-color: rgba(0, 0, 0,0.7);
+
+    text-align: center;
+    .text-box {
+      color: #f2f2f2;
+      height: 200px;
+      margin: auto;
+      opacity: 1;
+
+    }
+  }
+}
+
+.modal {
+  color: black;
+}
