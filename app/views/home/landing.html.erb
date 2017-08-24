@@ -4,12 +4,13 @@
     <p> Highly motivated developer specializing in Ruby on Rails and Frontend development. </p>
     <h3> Skills </h3>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3"style="padding:5px;">
         <ul>
           <li>Ruby</li>
           <li>Ruby on Rails</li>
           <li>Sinatra</li>
           <li>Java</li>
+          <li>Rspec</li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -18,12 +19,14 @@
           <li>Postgresql</li>
           <li>DynamoDB</li>
           <li>Firebase</li>
+          <li>Aurora</li>
         </ul>
       </div>
       <div class="col-md-3">
         <ul>
           <li>HTML</li>
           <li>CSS</li>
+          <li>SASS</li>
           <li>Javascript</li>
           <li>Bootstrap</li>
         </ul>
@@ -33,7 +36,8 @@
           <li>Git</li>
           <li>Heroku</li>
           <li>AWS</li>
-          <li>Github</li>
+          <li>Jira</li>
+          <li>Linux</li>
         </ul>
       </div>
     </div>
@@ -46,73 +50,59 @@
   <div class="row">
     <div class="col-md-12">
       <div class="project">
-      <%= image_tag "mr-in.png" %>
+      <%= image_tag "mediarails.png" %>
         <div class="proj-content">
           <h3>MediaRails CRM Integrations UI</h3>
-          <p>A user interface for adding network integrations</p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Description</button>
+          <p style="text-align:center;">A user interface I created for clients to add their own affiliate network integrations. This required: building the logic to interact with dynamoDB in our Java framework, Adding the actions inside of API gateway on AWS, <br>  calling the api actions inside our main crm app and parsing the data. </p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">images</button>
+        </div>
+      </div>
+      <div class="project">
+      <%= image_tag "mediarails.png" %>
+        <div class="proj-content">
+          <h3>MediaRails CRM affiliate network integrations</h3>
+          <p>Added the ability to connect with several affiliate networks to pull and aggregate data in our client's accounts. This was built in our Java micro services.</p>
         </div>
       </div>
       <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">MediaRails</h4>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-body">
+             <p style="font-weight:bold;"> a card style integration index </p>
+             <%= image_tag "integrationview.png" %>
+             <p style="font-weight:bold; padding-top:20px;"> a form for creating brands </p>
+             <%= image_tag "addb.png" %>
+             <p style="font-weight:bold; padding-top:20px;"> a form for adding an integration to a brand </p>
+             <%= image_tag "addin.png" %>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
       <div class="project">
-      <%= image_tag "mr.png" %>
+      <%= image_tag "mediarails.png" %>
         <div class="proj-content">
-          <h3>Built affiliate network integrations</h3>
-          <p>Added the ability to pull network report data</p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Description</button>
-        </div>
-      </div>
-      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">MediaRails</h4>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+          <h3>MediaRails CRM network credential validations</h3>
+          <p>Created validations tests to notify a user when their network credentials are incorrect or outdated.</p>
         </div>
       </div>
       <div class="project">
-      <%= image_tag "weatherappdesc.png" %>
+      <%= image_tag "weather2.png" %>
         <div class="proj-content">
           <h3>Real Weather</h3>
-          <p> A weather app that consumes the json api from APIXU </p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Description</button>
-          <button "https://github.com/Joelio7/weather_app",  class='btn btn-warning'>View on Github</button>
+          <p> A weather app that consumes the api from APIXU. This app is built using Ruby on Rails.</p>
+          <%= link_to "See Site", "https://safe-waters-13940.herokuapp.com/",  :class=> "btn btn-primary" , :target=> "_blank" %>
+          <%= link_to "View on Github", "https://github.com/Joelio7/weather_app",  :class =>'btn btn-warning', :target => "_blank",:style =>"width:150px;"%>
         </div>
       </div>
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Real Weather</h4>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+      <div class="project"style="margin-bottom:100px;">
+      <%= image_tag "givesafe2.png" %>
+        <div class="proj-content">
+          <h3>Give Safe</h3>
+          <p> Give Safe (Now called Samaritan) is a project I had the honor to be a part of at a faith-based hackathon in Seattle. The app allows users to support local homeless through a secure manor. My part was contributing the api that tracks social worker updates.</p>
+          <%= link_to "See Site", "https://www.withgivesafe.org/", :class=>"btn btn-primary", :target => "_blank" %>
         </div>
       </div>
     </div>

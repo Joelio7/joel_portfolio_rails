@@ -31,7 +31,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("artem-sapegin-180146.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 650px;
 
 }
 .container-fluid {
@@ -81,11 +81,12 @@ body {
 }
 .container {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 600px;
   height: 500px;
   background-color: #f7f7f7;
   border-radius: 2px;
+  margin-bottom: 40px;
 }
 form {
   padding-top: 50px;
@@ -98,6 +99,7 @@ form {
   .project {
     margin: auto;
     margin-top: 50px;
+
     width: 900px;
     height:300px;
 
@@ -129,7 +131,7 @@ form {
 
 }
 .container-about {
-  background:  url("18156067_10211971730795939_6782562959131153754_o.jpg");
+  background:  url("marathon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -137,14 +139,15 @@ form {
   text-align: center;
   .container-me {
     margin: auto;
-    margin-left: 400px;
+  //  margin-left: 400px;
     padding: 50px;
     height: 600px;
     width: 600px;
-    background-color: rgba(0, 0, 0,0.7);
+    background-color: rgba(0, 0, 0,0.3);
 
     text-align: center;
     .text-box {
+      padding-top: 100px;
       color: #f2f2f2;
       height: 200px;
       margin: auto;
